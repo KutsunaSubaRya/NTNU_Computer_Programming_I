@@ -42,4 +42,4 @@ clean:
 	-rm -rf $(NAMEEX) $(EX)
 	-rm -rf $(NAMETH) $(THR)
 	-rm -rf $(NAMEFO) $(FOU)
-	-rm -rf $(NAMEFi) $(FIV)
+	-rm -rf $(NAMEFI) $(FIV)

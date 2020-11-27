@@ -24,6 +24,7 @@ int deter(int gn)
 {
     int a,b,c,d;
     a=gn/1000,b=(gn/100)%10,c=(gn/10)%10,d=gn%10;
+    if(gn>=10000 || gn<1000) return 1;
     if(a!=b && a!=c && a!=d && b!=c && b!=d && c!=d) return 0;
     else return 1;
 }
