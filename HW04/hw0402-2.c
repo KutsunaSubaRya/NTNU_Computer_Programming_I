@@ -20,10 +20,9 @@ signed main()
         {
             disk[j + len + 1] = disk[j]; //palindrome
             ptr[j] = pos[ptr[j]];
-            //printf("%d ",ni[j]);
-        }   //printf("j=%d %d \n",j,ac[j]);
+        }
         len = len * 2 + 1;
-        for(k = 0, j++; j < len; j++, k++) ptr[j] = neg[ptr[k]]; //printf("j=%d %d \n",j,ac[j]);
+        for(k = 0, j++; j < len; j++, k++) ptr[j] = neg[ptr[k]];
     }
     for(i = 0; i < len; i++) 
     {
