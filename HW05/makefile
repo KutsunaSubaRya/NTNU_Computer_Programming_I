@@ -10,7 +10,7 @@ THR= hw0503.o PP.o PC.o
 NAMEFO= hw0504
 FOU= hw0504.o LR.o
 NAMEFI= hw0505
-FIV= hw0505.o PM.o
+FIV= hw0505.o PM.o Op.o
 
 .PHONY: all clean
 
@@ -28,7 +28,7 @@ hw0503: hw0503.o PC.o PP.o
 hw0504: hw0504.o LR.o
 	$(CC) $(CFLAGS) -o $(NAMEFO) $(FOU)  $(LDLIBS)
 
-hw0505: hw0505.o PM.o
+hw0505: hw0505.o PM.o Op.o
 	$(CC) $(CFLAGS) -o $(NAMEFI) $(FIV)  $(LDLIBS)
 
 clean:
