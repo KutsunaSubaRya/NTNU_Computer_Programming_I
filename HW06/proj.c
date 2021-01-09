@@ -6,8 +6,8 @@ void project(double *x, double *y, double *z, int32_t a, int32_t b, int32_t c
 , int32_t d)
 {
     double _x=*x,_y=*y,_z=*z;
-    double dist=(fabs(a*_x+b*_y+c*_z+d))/sqrt(a*a+b*b+c*c);
-    *x=_x+a*dist/sqrt(a*a+b*b+c*c);
-    *y=_y+b*dist/sqrt(a*a+b*b+c*c); 
-    *z=_z+c*dist/sqrt(a*a+b*b+c*c);
+    double dist=(a*_x+b*_y+c*_z+d)/sqrt(a*a+b*b+c*c);
+    *x=-1*_x+a*dist/sqrt(a*a+b*b+c*c);
+    *y=-1*_y+b*dist/sqrt(a*a+b*b+c*c); 
+    *z=-1*_z+c*dist/sqrt(a*a+b*b+c*c);
 }

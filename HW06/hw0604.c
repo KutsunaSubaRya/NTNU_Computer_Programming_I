@@ -27,13 +27,13 @@ signed main()
     {
         if(c==1) printf("z");
         else if(c>0) printf("%dz",c);
-        else if(c<0) printf("-%dz",c);
+        else if(c<0) printf("%dz",c);
     }
     else
     {
         if(c==1) printf("+z");
         else if(c>0) printf("+%dz",c);
-        else if(c<0) printf("-%dz",c);
+        else if(c<0) printf("%dz",c);
     }
     printf("=%d\nPlease enter the point: ",d);
     if(scanf("%lf %lf %lf",&x,&y,&z)){};
