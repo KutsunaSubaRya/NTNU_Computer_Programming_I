@@ -35,7 +35,7 @@ signed main()
         else if(c>0) printf("+%dz",c);
         else if(c<0) printf("%dz",c);
     }
-    printf("=%d\nPlease enter the point: ",d);
+    printf("=%d\nPlease enter the point: ",-1*d);
     if(scanf("%lf %lf %lf",&x,&y,&z)){};
     project(&x,&y,&z,a,b,c,d);
     printf("The projection is (%lf,%lf,%lf)",x,y,z);
