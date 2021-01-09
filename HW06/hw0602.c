@@ -11,7 +11,8 @@ signed main()
     printf("input: ");
     while(scanf("%d",&a) && a!=0)
     {
-        if(a==-1)
+        if(a<=-3) return printf("Invalid Input\n"),0;
+        else if(a==-1)
         {
             if(len==0) continue;
             buf[flag++]=arr[--len]; 

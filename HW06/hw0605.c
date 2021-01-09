@@ -5,7 +5,20 @@
 #define CN printf("\n")
 #define int int32_t
 signed main() {
-    
+    uint8_t ans=1,chk[53]={0};
+    for(int i=0;i<13;i++)
+    {
+        if(player1[i]<=52) chk[player1[i]]++;
+        else return printf("Invalid Input\n"),0; 
+        if(player2[i]<=52) chk[player2[i]]++;
+        else return printf("Invalid Input\n"),0;
+        if(player3[i]<=52) chk[player3[i]]++;
+        else return printf("Invalid Input\n"),0;
+        if(player4[i]<=52) chk[player4[i]]++;
+        else return printf("Invalid Input\n"),0;
+    }
+    for(int i=1;i<=52;i++) ans*=chk[i];
+    if(ans!=1) return printf("Invalid Input\n"),0;
     printf( "Before:\n" );
     print_card(player1);
     print_card(player2);
